@@ -1,0 +1,11 @@
+randomness
+probability
+axiomas-de-probabilidad
+primeras-propiedades
+regla-de-laplace
+más-ejemplos-y-propiedades
+conditional
+definición-de-probabilidad-condicionada
+independencia-de-sucesos
+teorema-de-la-probabilidad-total
+teorema-de-bayes

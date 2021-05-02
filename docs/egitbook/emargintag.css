@@ -1,0 +1,13 @@
+.TODO {
+    color: red;
+    position:relative;
+    margin-left:4em;
+}
+
+.TODO::before {
+    content: "TODO";
+    display: block;
+    position: absolute;
+    right: 100%;
+    padding: 0 1em 0 0;
+}

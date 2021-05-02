@@ -1,0 +1,42 @@
+/* Estilo personalizado para output de los bloques de código R
+ * ------------------------------------------------------------
+ *
+ * Aplicará a todos los bloques de código del documento
+ * porque el preámbulo de index.Rmd incluye
+ * knitr::opts_chunk$set(class.output = 'egitbook-output')
+ *
+ *  Idea de: https://stackoverflow.com/questions/65495605/in-r-bookdown-how-do-i-set-the-default-code-output-background-color
+ */
+pre.egitbook-output {
+    background: transparent !important;
+    border: 1px solid lightgray !important;
+}
+
+
+/* Estilo personalizado para source y ouptut de bloques de código R
+ * que simula el aspecto de la consola de RStudio
+ * ------------------------------------------------------------
+ *
+ * Para aplicarlo a un bloque de código incluir las opciones
+ * class.source = 'console-source', class.output = 'console-output'
+ *
+ * Y para conseguir el aspecto completo de la consola añadir además
+ * comment="", prompt=TRUE, highlight=FALSE
+ *
+ * Ejemplo:
+ * ```{r, class.source='console-source', class.output='console-output', comment="", prompt=TRUE, highlight=FALSE}
+ * sqrt(2)
+ * ```
+ */
+pre.console-source {
+    color: blue !important;
+    background: red !important;
+    background-color: transparent !important;
+    padding: 0 0 0 3ex !important;
+    border: none !important;
+}
+pre.console-output {
+    background-color: transparent !important;
+    padding: 0 0 0 3ex !important;
+    border: none !important;
+}
